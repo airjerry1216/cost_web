@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <title>test</title>
+    </head>
+    <body>
+        <h1>開銷計算器</h1>
+        <button id="newButton">新增</button>
+        <button id="cntButton">結算</button>
+        <h2>總花費 :&nbsp;<u> <span id="total">0</span> </u>&nbsp;萬</h2>
+        <h3>項目 支出 通膨 起 至</h3>
+        <!--img src="images/cat_1.jpg"-->
+        <!--button>Change user</button-->
+        
+        <form>
+            <p id='para' style="display:inline">開銷 1 : </p>
+            <span id="item">
+                <input type="text" name="項目">
+                <input type="text" name="支出" id="cost">
+                <input type="text" name="通膨" id="rate">
+                <input type="text" name="起" id="from">
+                <input type="text" name="至" id="to">
+                <p id="item_ans" style="display:inline"></p>
+                <br/><br/>
+            </span>
+        </form>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
