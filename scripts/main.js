@@ -60,6 +60,7 @@ cntButton.onclick=function(){
 }
 function total(){
     var cost=document.querySelectorAll("#cost");
+    var option=document.querySelectorAll("#option")
     var rate=document.querySelectorAll("#rate");
     var from=document.querySelectorAll("#from");
     var to=document.querySelectorAll("#to");
@@ -68,7 +69,7 @@ function total(){
     var total=0;
         
     for(var i=0;i<n;i++){
-        ans=calculate(cost[i].value,rate[i].value,from[i].value,to[i].value);
+        ans=calculate(cost[i].value,option[i].value,rate[i].value,from[i].value,to[i].value);
         item_ans[i].innerHTML=ans+" 萬";
         total+=ans;
     }
@@ -78,8 +79,10 @@ function total(){
     //var total_para=document.createElement("p");
     //document.body.appendChild(total_para.appendChild(document.createTextNode(total)));
 }
-function calculate(cost,rate,from,to){    
+function calculate(cost,option,rate,from,to){    
     var f_cost=parseFloat(cost);
+    if(option=="month")
+      f_cost*=12;
     var f_rate=parseFloat(rate);
     var f_from=parseFloat(from);
     var f_to=parseFloat(to);
