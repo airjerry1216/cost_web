@@ -1,3 +1,19 @@
 input[type="text"] {
     width:70px;
 }
+
+body{
+    background-color : gainsboro;
+}
+h1{
+    //font-family: 'Handlee', cursive;
+    //font-family: 'Marck Script', cursive;
+    //font-family: 'Yellowtail', cursive;
+    font-family: 'Bad Script', cursive;
+}
+h2{
+    //font-family: 'Handlee', cursive;
+    //font-family: 'Marck Script', cursive;
+    //font-family: 'Yellowtail', cursive;
+    font-family:Arial,cursive;
+}

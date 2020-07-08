@@ -3,24 +3,25 @@
     <head>
         <meta charset="utf-8">
         <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <title>test</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Marck+Script&family=Yellowtail&display=swap" rel="stylesheet">
+        <title>Cost Calculator</title>
     </head>
     <body>
-        <h1>開銷計算器</h1>
-        <button id="newButton">新增</button>
-        <button id="cntButton">結算</button>
-        <h2>總花費 :&nbsp;<u> <span id="total">0</span> </u>&nbsp;萬</h2>
-        <h3>項目 支出 通膨 起 至</h3>
+        <h1>Total expense of your remaining life .</h1>
+        <button id="newButton">new item</button>
+        <button id="cntButton">calculate</button>
+        <h2>Total Expense :&nbsp;<u> <span id="total">0</span> </u>&nbsp;萬</h2>
+        <h3>Item Cost Inflate_Rate From To</h3>
         <!--img src="images/cat_1.jpg"-->
         <!--button>Change user</button-->
         
         <form>
-            <p id='para' style="display:inline">開銷 1 : </p>
+            <p id='para' style="display:inline">Cost 1 : </p>
             <span id="item">
                 <input type="text" name="項目">
                 <select name="選項" id="option">
-                    <option value="year">年</option>
-                    <option value="month">月</option>
+                    <option value="year">year</option>
+                    <option value="month">month</option>
                 </select>
                 <input type="text" name="支出" id="cost">
                 <input type="text" name="通膨" id="rate">

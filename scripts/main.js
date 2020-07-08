@@ -38,9 +38,9 @@ function insert_item(){
     var cnt=document.createElement('p');
     cnt.style="display:inline";
     if(n<10)
-        cnt.appendChild(document.createTextNode('開銷 '+n+' : '));
+        cnt.appendChild(document.createTextNode('Cost '+n+' : '));
     else
-        cnt.appendChild(document.createTextNode('開銷'+n+' : '));
+        cnt.appendChild(document.createTextNode('Cost'+n+' : '));
     document.body.appendChild(cnt);
 
     var this_item = document.getElementById('item');
